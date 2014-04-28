@@ -1,13 +1,15 @@
-# Docpad Site Base (based on www.ewal.net)
+# Docpad Site Base
 
 This is a template that can be used to start a [DocPad-based](http://docpad.org) blog.
 This is basically the blog at www.ewal.net with Erv Walter's content taken out.  It's
 ready to be used with your content.
 
 Note that all of the complicated work was done by Erv Walter.  All I did was create a template
-so that I can use this as a starting poing for blogs that I create.
+so that I can use this as a starting poing for blogs that I create and for anyone else who
+might want to use it.
 
 Erv Walter's original blog can be found here: [www.ewal.net](http://www.ewal.net).
+His source code is found here: [GitHub:ervwalter/ewalnet-docpad](https://github.com/ervwalter/ewalnet-docpad.git).
 
 ## License
 Copyright (c) 2014 Katsuyuki Ohmuro
