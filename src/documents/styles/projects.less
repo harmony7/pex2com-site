@@ -2,6 +2,15 @@
   clear: both;
   margin: 40px 0;
 
+  
+  p {
+      margin: 12px 0;
+  }
+  
+  div.links {
+    font-size: 80%;
+  }
+  
   img {
     margin-bottom: 10px;
     border: 1px solid @seperator-color;
@@ -10,6 +19,10 @@
     height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
   }
 
+  img.icon {
+    max-width: 50%;  
+  }
+  
   .project-description {
     h2 {
       padding-top: 10px;
@@ -25,6 +38,11 @@
       max-width: 240px;
       float: left;
       margin-bottom: 0;
+    }
+  
+    img.icon {
+      width: 120px;
+      max-width: 120px;
     }
 
     .project-description {
