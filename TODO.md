@@ -2,3 +2,4 @@
 * add client-side coffeescript translation support
 
 
+* Add apple-touch-icon.png, favicon.ico, favicon.png

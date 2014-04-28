@@ -10,16 +10,16 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://www.example.com"
+			url: "http://pex2.jp"
 
 			# The default title of our website
-			title: "Website Title"
+			title: "pex2.jp"
 
 			# The website author's name
-			author: "Author Name"
+			author: "katsuyuki ohmuro"
 
 			# The website author's email
-			email: "webmaster@example.com"
+			email: "harmony7@pex2.jp"
 
 			# cache-busting timestamp
 			timestamp: new Date().getTime()
@@ -66,10 +66,10 @@ docpadConfig = {
 		moment: require('moment')
 
 		# Disqus.com settings
-		disqusShortName: 'example'
+		disqusShortName: 'pex2jp'
 
 		# Google+ settings
-		googlePlusId: '000000000000000000000'
+		googlePlusId: '114116299092065836789'
 
 		getTagUrl: (tag) ->
 			slug = tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')

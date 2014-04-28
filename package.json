@@ -1,11 +1,11 @@
 {
-  "name": "docpad-site-base",
+  "name": "pex2jp-site",
   "version": "1.0.0",
-  "description": "Source for www.ewal.net, modified for general use",
+  "description": "Source for pex2.jp web site",
   "author": "Katsuyuki Ohmuro <harmony7@pex2.jp>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harmony7/docpad-site-base.git"
+    "url": "https://github.com/harmony7/pex2jp-site.git"
   },
   "license": "MIT",
   "dependencies": {

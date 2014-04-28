@@ -1,5 +1,5 @@
 {
-  "name": "docpad-site-base",
+  "name": "pex2jp-site",
   "version": "1.0.0",
   "dependencies": {
     "docpad": {

@@ -4,25 +4,176 @@ title: Projects
 ---
 
 <h1>Projects</h1>
-<p>Here are some of the projects I have worked on (or am currently working on).</p>
+<p>Here are some of the projects I have been involved with.</p>
 
 <div class="project">
-    <img src="/stuff/project_image.png" class="fancybox"/>
+    <img src="/stuff/hnlivecomments_scrn.png" class="fancybox"/>
 
     <div class="project-description">
-        <h2>Project Title</h2>
+        <h2>Hacker News Live Comments Bookmarklet</h2>
 
         <div class="links">
-            <div>Project Home Page - <a href="http://www.example.com/">http://www.example.com/</a></div>
-            <div>Github - <a href="https://github.com/user/project">https://github.com/user/project</a></div>
+            <div>Project Home Page - <a href="https://hnlivecomments.pex2.jp/">https://hnlivecomments.pex2.jp/</a></div>
+            <div>Github - <a href="https://github.com/harmony7/HNLiveComments">https://github.com/harmony7/HNLiveComments</a></div>
         </div>
 
         <p>
-            Description of project.
+            <a href="https://news.ycombinator.com/news">Hacker News</a> is a great source of information but one of its problems is its static nature.
+            In this project I have written a bookmarklet that lets you see newly posted comments on Hacker News without having to refresh the page.
+            It uses <a href="http://hnstream.com/">HNStream</a> (made by Justin of <a href="http://fanout.io/">Fanout.io</a>) to obtain the live data,
+            and it fiddles with the page DOM to display new comments in a way that very closely matches HN's look.
+        </p>
+        <p>
+            It is a JavaScript bookmarklet that does some HTML scraping to turn the view into a <a href="http://knockoutjs.com/">KnockoutJS</a> view model.
+            It also uses the <a href="#Pollymer">Pollymer</a> Ajax library to perform long polling and request retries.
         </p>
 
     </div>
 </div>
 
-<!-- Additional Projects -->
+<div class="project">
+    <img src="/stuff/docpad_icon.jpg" class="icon" alt="DocPad Icon" />
 
+    <div class="project-description">
+        <h2>docpad-plugin-vash</h2>
+
+        <div class="links">
+            <div>NPM - <a href="https://npmjs.org/package/docpad-plugin-vash">https://npmjs.org/package/docpad-plugin-vash</a></div>
+            <div>Github - <a href="https://github.com/harmony7/docpad-plugin-vash">https://github.com/harmony7/docpad-plugin-vash</a></div>
+        </div>
+
+        <p>
+            I wrote this plugin for <a href="http://docpad.org/">DocPad</a> as I began to work on this blog.
+            It is a plugin that transforms <a href="https://github.com/kirbysayshi/vash">Vash</a> to any file type.
+        </p>
+        <p>
+            Vash is an implementation of the <a href="http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx">Razor syntax</a>
+            view engine for JavaScript.  This plugin allows you to use the Razor syntax to write your DocPad layouts.
+        </p>
+
+    </div>
+</div>
+
+<div class="project">
+    <img src="/stuff/webhookinbox_scrn.png" class="fancybox" alt="WebhookInbox Screenshot" />
+
+    <div class="project-description">
+        <h2>WebhookInbox</h2>
+
+        <div class="links">
+            <div>Project Home Page - <a href="http://webhookinbox.com/">http://webhookinbox.com/</a></div>
+            <div>Github - <a href="https://github.com/fanout/webhookinbox">https://github.com/fanout/webhookinbox</a></div>
+        </div>
+
+        <p>
+            I implemented much of the frontend components of WebhookInbox, a web service and website that receives HTTP requests from external sources
+            and stores the data of those requests for later retrieval and examination.
+        </p>
+        <p>
+            WebhookInbox makes it possible to create a temporary HTTP endpoint, which can be passed to other applications for use during development.
+            If you're developing a service that makes HTTP callbacks, WebhookInbox can be used as a convenient way to examine what you're sending.
+            Incoming request data is displayed on the WebhookInbox website in realtime as it happens, thanks to the <a href="#Pollymer">Pollymer Library</a>.
+            The data is orchestrated on in the browser using the <a href="http://angularjs.org/">AngularJS Framework</a>.
+        </p>
+        <p>
+            There is an instance of WebhookInbox running at <a href="http://webhookinbox.com/">http://webhookinbox.com/</a> for anyone to use.
+        </p>
+
+    </div>
+</div>
+
+<div class="project">
+    <img src="/stuff/nodejs_icon.png" class="icon" alt="node.js Icon" />
+
+    <div class="project-description">
+        <h2>nodegrip</h2>
+
+        <div class="links">
+            <div>NPM - <a href="https://npmjs.org/package/grip">https://npmjs.org/package/grip</a></div>
+            <div>Github - <a href="https://github.com/fanout/nodegrip">https://github.com/fanout/nodegrip</a></div>
+        </div>
+
+        <p>
+            I authored the nodegrip library, which is an interface library for Node.js for supporting the
+            <a href="http://blog.fanout.io/2013/02/10/http-grip-proxy-hold-technique/">Generic Realtime Intermediary Protocol (GRIP)</a>.
+            GRIP is a technique for communicating with an HTTP proxy server to hold open an incoming connection.
+        </p>
+
+        <p>
+            This library is designed to be used with HTTP reverse proxy servers that
+            <a href="http://blog.fanout.io/2013/04/09/an-http-reverse-proxy-for-realtime/">support the GRIP interface</a>,
+            such as <a href="https://github.com/fanout/pushpin">Pushpin</a>, from <a href="http://fanout.io/">Fanout.io</a>.
+        </p>
+
+    </div>
+</div>
+
+<div class="project">
+    <img src="/stuff/nodejs_icon.png" class="icon" alt="node.js Icon" />
+
+    <div class="project-description">
+        <h2>nodefpp</h2>
+
+        <div class="links">
+            <div>NPM - <a href="https://npmjs.org/package/fpp">https://npmjs.org/package/fpp</a></div>
+            <div>Github - <a href="https://github.com/fanout/nodefpp">https://github.com/fanout/nodefpp</a></div>
+        </div>
+
+        <p>
+            I authored the nodefpp library, which is a library for Node.js for supporting the
+            <a href="http://blog.fanout.io/2013/10/09/publishing-json-over-xmpp/">Fanout Pubsub Protocol (FPP)</a>.
+            The Fanout pubsub protocol is used to send simple realtime messages over a communications channel.
+            This library has been designed for use either with Fanout's pubsub service or any compatible service.
+        </p>
+
+        <p>
+            This library implements the FPP data format as a custom data format for <a href="#nodepubcontrol">nodepubcontrol</a>,
+            which is an EPCP library for Node.js and is another of my projects (listed below).
+        </p>
+
+    </div>
+</div>
+
+<div class="project" id="nodepubcontrol">
+    <img src="/stuff/nodejs_icon.png" class="icon" alt="node.js Icon" />
+
+    <div class="project-description">
+        <h2>nodepubcontrol</h2>
+
+        <div class="links">
+            <div>NPM - <a href="https://npmjs.org/package/pubcontrol">https://npmjs.org/package/pubcontrol</a></div>
+            <div>Github - <a href="https://github.com/fanout/nodepubcontrol">https://github.com/fanout/nodepubcontrol</a></div>
+        </div>
+
+        <p>
+            I authored the pubcontrol library, which is a library for Node.js for supporting message publishing using the
+            <a href="https://github.com/fanout/pushpin/blob/master/doc/epcp-protocol.txt">HTTP Extensible Pubsub Control Protocol (EPCP)</a>,
+            which defines a generalized and extensible data publishing protocol using HTTP.
+        </p>
+        <p>
+            This library contains a Format base class and a PubControl class that is used to send messages. This library also supports the
+            case when the EPCP endpoint requires certain types of authentication.
+        </p>
+
+    </div>
+</div>
+
+<div class="project" id="Pollymer">
+    <img src="/stuff/page_javascript.png" class="icon" alt="JavaScript Library Screenshot" />
+
+    <div class="project-description">
+        <h2>Pollymer</h2>
+
+        <div class="links">
+            <div>Github - <a href="https://github.com/fanout/pollymer">https://github.com/fanout/pollymer</a></div>
+        </div>
+
+        <p>
+            I co-authored Pollymer, a general-purpose JavaScript library that provides conveniences for performing
+            Ajax operations involving long-polling applications, such as request retries, exponential backoff
+            between requests, randomized request delaying, and workarounds for browser "busy" indications.
+            It also implements multiple transports to ensure cross-domain access works in all major browsers.
+        </p>
+
+    </div>
+</div>
