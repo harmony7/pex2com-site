@@ -3,7 +3,7 @@ layout: post
 title: Importing Old Posts
 date: 2014-05-06 20:35
 comments: true
-tags: Blog
+tags: Misc
 %%%
 
 I've found some very old blog posts and articles I have written, stuff that covers games to programming to looking
