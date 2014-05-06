@@ -50,3 +50,14 @@ var getAtTime = function() {
 
     return { dateString: dateString, timeString: timeString, internetTime: internetTime, percent: percent };
 };
+
+$(function() {
+    window.setInterval(function() {
+        var atTime = getAtTime();
+        var clock = $("#clock");
+        clock.find(".date").html(atTime.dateString);
+        clock.find(".time").html(atTime.timeString);
+        clock.find(".internetTime").html(atTime.internetTime);
+        $("#inbar").css("width", atTime.percent);
+    }, 200);
+});

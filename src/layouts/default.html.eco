@@ -31,7 +31,7 @@
     <![endif]-->
 
     <%- @getBlock('meta').toHTML() %>
-    <%- @getBlock('styles').toHTML() %>
+    <%- @getBlock('styles').add(@site.styles or []).add(@document.styles or []).toHTML() %>
 </head>
 <body>
 <% if @googlePlusId: %>
@@ -89,7 +89,7 @@
     <% end %>
 <% end %>
 
-<%- @getBlock('scripts').toHTML() %>
+<%- @getBlock('scripts').add(@site.scripts or []).add(@document.scripts or []).toHTML() %>
 
 </body>
 </html>

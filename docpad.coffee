@@ -24,6 +24,15 @@ docpadConfig = {
 			# cache-busting timestamp
 			timestamp: new Date().getTime()
 
+			scripts: [
+				'/scripts/attime.js'
+				'/scripts/attime-clock.js'
+			]
+
+			styles: [
+				'/styles/attime-clock.css'
+			]
+
 
 		# -----------------------------
 		# Helper Functions

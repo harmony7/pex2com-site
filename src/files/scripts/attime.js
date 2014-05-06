@@ -6,7 +6,7 @@
         var d = new Date(dateTime);
         // We add 1 to UTC time because @Time is based on Switzerland time.
         // @Time was supposedly invented by Swatch, which is a Swiss company.
-        var utcS = (d.getUTCHours()+1) * 3600 + d.getUTCMinutes() * 60 + d.getUTCSeconds();
+        var utcS = ((d.getUTCHours()+1) % 24) * 3600 + d.getUTCMinutes() * 60 + d.getUTCSeconds();
         var utcMS = utcS * 1000 + d.getUTCMilliseconds();
         // 86.4 is not an approximation.
         // The following gives us a number equal to 1000 times
