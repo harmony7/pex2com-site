@@ -1,6 +1,6 @@
 %%%
 layout: post
-title: I joined mixi!
+title: Big day tomorrow!
 date: 2006-11-12 23:28
 comments: true
 tags: Work
