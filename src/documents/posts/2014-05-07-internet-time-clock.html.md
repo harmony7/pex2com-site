@@ -8,8 +8,7 @@ tags: Misc, Programming
 
 Today you'll notice a new little widget added to the sidebar of this site.
 
-It's a quick partial view I wrote for DocPad that runs a script to display the
-<a href="http://www.swatch.com/zz_en/internettime/" target="_blank">Internet Time (Swatch .beat)</a>.
+It's a quick partial view I wrote for [DocPad](http://docpad.org/) that runs a script to display the Internet Time.
 
 In 2001 I had the opportunity to play the online video game
 <a href="http://en.wikipedia.org/wiki/Phantasy_Star_Online" target="_blank">Phantasy Star Online</a>,
@@ -17,7 +16,7 @@ which used a strange unit of time called the beat.
 
 ![PSO Internet Time](/stuff/pso-internet-time.jpg)
 
-This was the Swatch beat, otherwise known as Internet Time.
+This was the <a href="http://www.swatch.com/zz_en/internettime/" target="_blank">Swatch beat, otherwise known as Internet Time</a>.
 It had been incorporated as a way to make it easier for international players to schedule their next online game,
 by eliminating time zones. The day would be divided into 1000 equal "beats", and the 0th beat would correspond with
 midnight in Switzerland (Swatch is a Swiss company).  This fascinated me, because I had always been wondering why
