@@ -1,11 +1,11 @@
 {
-  "name": "pex2jp-site",
+  "name": "pex2com-site",
   "version": "1.0.0",
-  "description": "Source for pex2.jp web site",
+  "description": "Source for pex2.com web site",
   "author": "Katsuyuki Ohmuro <harmony7@pex2.jp>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harmony7/pex2jp-site.git"
+    "url": "https://github.com/harmony7/pex2com-site.git"
   },
   "license": "MIT",
   "dependencies": {

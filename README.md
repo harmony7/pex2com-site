@@ -1,6 +1,6 @@
-# pex2.jp
+# pex2.com
 
-Source code for pex2.jp.
+Source code for pex2.com.
 
 Based on docpad-site-base, a [DocPad-based](http://docpad.org) blog template 
 that is based on Erv Walter's blog at [www.ewal.net](http://www.ewal.net).
