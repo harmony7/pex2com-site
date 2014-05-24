@@ -51,6 +51,9 @@ docpadConfig = {
 		getPageUrlWithHostname: ->
 			"#{@site.url}#{@document.url}"
 
+		getUrlWithHostname: (url) ->
+			"#{@site.url}#{url}"
+
 		getIdForDocument: (document) ->
 			hostname = url.parse(@site.url).hostname
 			date = document.date.toISOString().split('T')[0]

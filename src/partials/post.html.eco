@@ -2,18 +2,25 @@
 cacheable: false
 ---
 <article id="post" class="post">
-    <div class="post-date"><%=  @moment(@date).format('MMM Do, YYYY') %></div>
     <% if @individualPost: %>
     <h1><%= @title %></h1>
     <% else: %>
     <h1><a href='<%= @url %>'><%= @title %></a></h1>
     <% end %>
+    <div class="post-metadata">
+        <span class="post-date"><%=  @moment(@date).format('MMM Do, YYYY') %></span>
+        <% if @comments and @disqusShortName: %>
+        - <a class="post-comments-link" href="<%= @url %>#disqus_thread" data-disqus-identifier="<%= @getUrlWithHostname(@url) %>">Comments</a>
+        <% end %>
+    </div>
     <div class="post-content">
         <%- @content %>
     </div>
     <% if @tags?: %>
-    <div class="post-tags">
-        Posted In: <%- ("<a href='#{@getTagUrl(tag)}'>#{tag}</a>" for tag in @tags).join(', ') %>
+    <div class="post-metadata">
+        <span class="post-tags">
+            Posted In: <%- ("<a href='#{@getTagUrl(tag)}'>#{tag}</a>" for tag in @tags).join(', ') %>
+        </span>
     </div>
     <% end %>
 </article>

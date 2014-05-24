@@ -1,9 +1,11 @@
-# pex2.com
+# Docpad Site Base (based on www.ewal.net)
 
 Source code for pex2.com.
 
-Based on docpad-site-base, a [DocPad-based](http://docpad.org) blog template 
-that is based on Erv Walter's blog at [www.ewal.net](http://www.ewal.net).
+Note that all of the complicated work was done by Erv Walter.  All I did was create a template
+so that I can use this as a starting poing for blogs that I create.
+
+Erv Walter's original blog can be found here: [www.ewal.net](http://www.ewal.net).
 
 ## License
 Copyright (c) 2014 Katsuyuki Ohmuro
