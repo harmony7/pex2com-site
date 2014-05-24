@@ -10,7 +10,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://pex2.com/"
+			url: "http://pex2.com"
 
 			# The default title of our website
 			title: "pex2.com"
