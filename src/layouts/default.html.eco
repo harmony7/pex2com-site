@@ -82,14 +82,14 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.6.3/coffee-script.min.js"></script>
 <script src="/scripts/site.js?<%= @site.timestamp %>"></script>
 
+<%- @getBlock('scripts').add(@site.scripts or []).toHTML() %>
+
 <% if @document.meta.scripts?: %>
     <% for script in @document.meta.scripts: %>
         <% script += '?' + @site.timestamp if script.substring(0,2) != '//' %>
         <script src="<%- script %>"></script>
     <% end %>
 <% end %>
-
-<%- @getBlock('scripts').add(@site.scripts or []).add(@document.scripts or []).toHTML() %>
 
 <% if @disqusShortName: %>
 <script type="text/javascript">
